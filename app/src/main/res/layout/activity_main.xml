@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="myapp.surfer.com.myapp.MainActivity"
+    android:orientation="vertical"
+    >
+<!-- match_parent es lo mismo que fill_parent -->
+    <!-- RelativeLayout: inidica que los controles va estar en una posición relativa con respecto a otra -->
+<!-- To-do saludo debe ponerse en values/string.xml -->
+
+    <TextView
+        android:id="@+id/tvTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mensaje"
+        android:gravity="center_horizontal"
+
+        />
+
+    <EditText
+        android:id="@+id/etDato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/dato" />
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/mensaje" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/mensaje" />-->
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/boton" />
+    <Button
+        android:id="@+id/botonN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mensajeToast" />
+    <Button
+        android:id="@+id/bActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nueva Activity" />
+
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/usuario" />
+    <EditText
+        android:id="@+id/etContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/contrasena" />
+
+    <ImageView
+        android:id="@+id/ivImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/android_image"
+        />
+
+</LinearLayout>
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools">-->
+
+<!--</LinearLayout>-->

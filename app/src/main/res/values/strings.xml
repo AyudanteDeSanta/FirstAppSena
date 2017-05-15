@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="mensaje">Hola mundo</string>
+    <string name="saludo">Hola Didier</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="boton">Cambiar dato</string>
+    <string name="dato">Ingresar dato</string>
+    <string name="mensajeToast">Lanzar Cuadro</string>
+</resources>
+
