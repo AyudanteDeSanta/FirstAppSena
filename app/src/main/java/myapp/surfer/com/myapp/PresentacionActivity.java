@@ -37,8 +37,7 @@ public class PresentacionActivity extends AppCompatActivity implements View.OnCl
                 break;
             case R.id.btAcercaDe:
                 Log.d("DEBUG","btAcercaDe ejecutanto");
-                //Toast.makeText(PresentacionActivity.this,"Desarrollado",Toast.LENGTH_LONG).show();
-                Toast.makeText(getApplicationContext(),"Desarrollado",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Desarrollado Por Didier Albarran",Toast.LENGTH_LONG).show();
                 Log.d("DEBUG","btAcercaDe terminó");
                 break;
         }
