@@ -6,6 +6,8 @@
     <string name="contrasena">Contraseña</string>
     <string name="boton">Cambiar dato</string>
     <string name="dato">Ingresar dato</string>
-    <string name="mensajeToast">Lanzar Cuadro</string>
+    <string name="inicioSesion">Iniciar Sesión</string>
+    <string name="acercaDe">Acerca de</string>
+    <string name="siguiente">Siguiente</string>
 </resources>
 

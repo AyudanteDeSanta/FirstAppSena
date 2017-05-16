@@ -25,32 +25,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/dato" />
-
-    <!--<TextView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="@string/mensaje" />-->
-
-    <!--<TextView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="@string/mensaje" />-->
-
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btCambiarDato"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/boton" />
-    <Button
-        android:id="@+id/botonN"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/mensajeToast" />
-    <Button
-        android:id="@+id/bActivity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Nueva Activity" />
+
+
 
     <EditText
         android:id="@+id/etUsuario"
@@ -63,12 +44,19 @@
         android:layout_height="wrap_content"
         android:hint="@string/contrasena" />
 
+    <Button
+        android:id="@+id/bActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/inicioSesion" />
+
     <ImageView
         android:id="@+id/ivImagen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/android_image"
         />
+
 
 </LinearLayout>
 

@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     EditText edUsuario;
     ImageView ivImagen;
     EditText edDato;
-    Button button2, botonN, bActivity;
+    Button btCambiarDato, bActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,13 +33,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         edUsuario.setText("Cambiamos texto");
 
         edDato = (EditText)findViewById(R.id.etDato);
-        button2 = (Button) findViewById(R.id.button2);
-        botonN = (Button) findViewById(R.id.botonN);
+        btCambiarDato = (Button) findViewById(R.id.btCambiarDato);
+
 
         bActivity = (Button) findViewById(R.id.bActivity);
 
-        button2.setOnClickListener(this);
-        botonN.setOnClickListener(this);
+        btCambiarDato.setOnClickListener(this);
         bActivity.setOnClickListener(this);
 
         Log.d("DEBUG", "onCreate llamado");
@@ -61,14 +60,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId())
         {
-            case R.id.button2:
+            case R.id.btCambiarDato:
                 String dato = edDato.getText().toString();
                 campo_texto.setText(dato);
                 break;
-            case R.id.botonN:
-                //campo_texto.setText("Botón 2!!!");
-                Toast.makeText(getApplicationContext(),"Esto es un Toast",Toast.LENGTH_SHORT).show();
-                break;
+//            case R.id.botonN:
+//                //campo_texto.setText("Botón 2!!!");
+//                Toast.makeText(getApplicationContext(),"Esto es un Toast",Toast.LENGTH_SHORT).show();
+//                break;
             case R.id.bActivity:
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 startActivity(intent);
