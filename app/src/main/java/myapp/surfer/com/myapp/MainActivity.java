@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     TextView campo_texto;
-    EditText edUsuario;
+    EditText edUsuario, edContrasena;
     ImageView ivImagen;
     EditText edDato;
     Button btCambiarDato, bActivity;
@@ -30,11 +30,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ivImagen.isClickable();
 
         edUsuario = (EditText)findViewById(R.id.etUsuario);
-        edUsuario.setText("Cambiamos texto");
+        //edUsuario.setText("Cambiamos texto");
+        edContrasena = (EditText)findViewById(R.id.etContrasena);
 
         edDato = (EditText)findViewById(R.id.etDato);
         btCambiarDato = (Button) findViewById(R.id.btCambiarDato);
-
 
         bActivity = (Button) findViewById(R.id.bActivity);
 
@@ -69,7 +69,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                Toast.makeText(getApplicationContext(),"Esto es un Toast",Toast.LENGTH_SHORT).show();
 //                break;
             case R.id.bActivity:
+                if (edUsuario.getText().toString().matches(""))
+                {
+                    Toast.makeText(getApplicationContext(),"Es requerido el nombre de usuario",Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if (edContrasena.getText().toString().matches(""))
+                {
+                    Toast.makeText(getApplicationContext(),"Es requerido la contraseña",Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                intent.putExtra("USUARIO", edUsuario.getText().toString());
                 startActivity(intent);
                 break;
         }

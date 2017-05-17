@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyApp</string>
+    <string name="app_name">AwesomeApp</string>
     <string name="mensaje">Hola mundo</string>
     <string name="saludo">Hola Didier</string>
     <string name="usuario">Usuario</string>
