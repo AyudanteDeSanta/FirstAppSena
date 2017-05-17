@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //            case R.id.botonN:
 //                //campo_texto.setText("Botón 2!!!");
 //                Toast.makeText(getApplicationContext(),"Esto es un Toast",Toast.LENGTH_SHORT).show();
-//                break;
+//                break
             case R.id.bActivity:
                 if (edUsuario.getText().toString().matches(""))
                 {
