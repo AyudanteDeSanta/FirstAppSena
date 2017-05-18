@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         campo_texto = (TextView) findViewById(R.id.tvTexto);
         campo_texto.setText("Hola de nuevo Didier");
+        //prueba
         ivImagen = (ImageView) findViewById(R.id.ivImagen);
 
         ivImagen.isClickable();
