@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AwesomeApp</string>
+    <string name="mensaje">Hello word</string>
+    <string name="saludo">Hi Didier</string>
+    <string name="usuario">User</string>
+    <string name="contrasena">Pass</string>
+    <string name="boton">Change data</string>
+    <string name="dato">Input data</string>
+    <string name="inicioSesion">Log in</string>
+    <string name="acercaDe">About</string>
+    <string name="siguiente">Next</string>
+</resources>
+
